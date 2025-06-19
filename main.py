@@ -37,6 +37,21 @@ if "proba" not in st.session_state:
 if "text_input" not in st.session_state:
     st.session_state.text_input = ""
 
+# Sample abstract tester
+st.markdown("###  Try a Sample Abstract")
+
+sample_abstracts = {
+    "Quantum Computing (Physics)": "Quantum entanglement plays a central role in the development of quantum computing algorithms and quantum key distribution systems.",
+    "CRISPR Gene Editing (Biology)": "CRISPR-Cas9 genome editing enables precise modification of DNA sequences for therapeutic and agricultural applications.",
+    "Image Classification (Computer Science)": "Deep convolutional neural networks have significantly improved performance in image classification and object detection tasks across large-scale datasets.",
+}
+
+sample_choice = st.selectbox("Choose a sample abstract to test", [""] + list(sample_abstracts.keys()))
+
+if sample_choice:
+    st.session_state.text_input = sample_abstracts[sample_choice]
+    
+
 # Input
 input_box = st.empty()
 user_input = st.text_area("Paste Your Abstract Here",
