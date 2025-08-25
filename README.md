@@ -9,7 +9,7 @@ SciCheck is a lightweight web app that classifies scientific abstracts into disc
 - Compare models
 
 ## Try It
-[Click to open Streamlit app](https://your-app-url)
+[Click to open Streamlit app](https://sci-check.turjo-jaman.com/)
 
 ##  Tech Stack
 - Python, scikit-learn
